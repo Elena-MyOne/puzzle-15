@@ -69,3 +69,12 @@ Layout practice projects with adaptive. Only HTML, CSS (SASS), and JS were used:
 7. [Prime-One](https://elena-myone.github.io/Prime-One/)
 
 8. [Momentum](https://elena-myone.github.io/momentum/my-app/dist/)
+
+## Courses
+
+- RS School - Stage 0
+- RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+- JavaScript Manual on learnjavascript.ru (in progress)
+- Udemy (in progress)
+- LinkedIn Learning (in progress)
+- FreeCodeCamp (in progress)
