@@ -26,3 +26,18 @@ Recently I'm working as a freelancer and already developed several projects. And
 - Node.js basic
 - Figma, Avocode, Adobe Photoshop
 - JIRA, Bugzilla
+
+## Code example
+
+```
+function add(num1, num2) {
+   num1 = String(num1).split('').reverse()
+   num2 = String(num2).split('').reverse()
+   const max = Math.max(num1.length, num2.length)
+   const str = [];
+   for(let i = 0; i < max; i++)
+      str.push((parseInt(num1[i]) || 0) + (parseInt(num2[i]) || 0))
+   num1 = str.reverse().join('');
+   return parseInt(num1);
+}
+```
