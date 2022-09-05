@@ -41,3 +41,31 @@ function add(num1, num2) {
    return parseInt(num1);
 }
 ```
+
+## Work experience
+
+Portfolio works I made on freelance:
+
+1. [Mike Snow: journalism | writings | insights](http://www.mikesnow.us/)
+
+   - HTML, CSS (SASS), Bootstrap
+
+2. [Pamela Twigg Coaching](http://pamelatwiggcoaching.com/)
+
+   - HTML, CSS (SASS), JS, GULP, Webpack, PHP, Figma
+
+3. [MyOne](https://www.myonewebdevelop.com/)
+
+   - HTML, CSS (SASS), JS, GULP, Webpack, PHP, Figma
+
+Layout practice projects with adaptive. Only HTML, CSS (SASS), and JS were used:
+
+4. [Historical games](https://elena-myone.github.io/HistoricalGames/)
+
+5. [Relvise](https://elena-myone.github.io/Relvise/)
+
+6. [Interior](https://elena-myone.github.io/Interior/index.html)
+
+7. [Prime-One](https://elena-myone.github.io/Prime-One/)
+
+8. [Momentum](https://elena-myone.github.io/momentum/my-app/dist/)
