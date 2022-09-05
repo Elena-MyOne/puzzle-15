@@ -16,3 +16,13 @@ I am highly motivated to start working as a Frontend Developer. I greatly enjoy 
 Recently I'm working as a freelancer and already developed several projects. And I’m looking forward to a part-time position as a Frontend Developer to start my professional career.
 
 Recently I'm working as a freelancer and already developed several projects. And I’m looking forward to a part-time position as a Frontend Developer to start my professional career.
+
+## Skills and Proficiency
+
+- HTML, CSS, JS
+- SCSS (Sass), Bootstrap, BEM
+- Git, GitHub
+- GULP, Webpack, Prepros, npm, Command Line
+- Node.js basic
+- Figma, Avocode, Adobe Photoshop
+- JIRA, Bugzilla
