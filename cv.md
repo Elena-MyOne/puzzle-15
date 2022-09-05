@@ -78,3 +78,13 @@ Layout practice projects with adaptive. Only HTML, CSS (SASS), and JS were used:
 - Udemy (in progress)
 - LinkedIn Learning (in progress)
 - FreeCodeCamp (in progress)
+
+## Languages
+
+- English
+
+  - Bell Language School (Certificate of Completion, English as a second language course. Advanced level. 1535 McDonald Ave, Brooklyn NY 11230, USA)
+
+- Russian
+
+  - Native
