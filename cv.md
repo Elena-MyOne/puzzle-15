@@ -46,7 +46,7 @@ function add(num1, num2) {
 
 Portfolio works I made on freelance:
 
-1. [Mike Snow: journalism | writings | insights](http://www.mikesnow.us/)
+1. [Mike Snow: journalism, writings, insights](http://www.mikesnow.us/)
 
    - HTML, CSS (SASS), Bootstrap
 
