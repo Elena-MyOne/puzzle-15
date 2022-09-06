@@ -2,4 +2,4 @@
 
 Private repository for @elena-myone
 
-https://Elena-MyOne.github.io/rsschool-cv/cv
+https://Elena-MyOne.github.io/rsschool-cv/
