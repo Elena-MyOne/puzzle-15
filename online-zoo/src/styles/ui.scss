@@ -1,0 +1,50 @@
+.button {
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 16px 30px;
+    width: 298px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.5s ease 0s;
+    z-index: 1000;
+  }
+  a::before{
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $orange;
+    border-radius: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: -1000;
+  }
+  a:hover::before{
+    opacity: 1;
+  }
+  a::after{
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $green;
+    border-radius: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: -1000;
+  }
+  a:active::after{
+    opacity: 1;
+  }
+}

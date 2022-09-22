@@ -1,0 +1,54 @@
+.watch {
+  position: relative;
+  height: 780px;
+  &__body {
+    display: flex;
+    position: relative;
+		z-index: 2;
+  }
+  &__row {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding:  86px 0px 0px 0px;
+  }
+  &__circle {
+    position: absolute;
+    top: 12px;
+    right: 106px;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    z-index: 3;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 500px;
+    text-align: center;
+    z-index: 4;
+    span {
+      color: $yellow;
+    }
+  }
+  &__button {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:  60px 0px 0px 0px;
+  }
+  &__image {
+    position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+  }
+}
