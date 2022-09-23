@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Swiper, { Navigation } from 'swiper';
+import 'swiper/css/pagination';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 import './styles/style.scss'
 
@@ -21,10 +22,18 @@ import './styles/style.scss'
 
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation],
+  modules: [Navigation, Pagination],
   loop: true,
   navigation: {
     nextEl: '.slider-pets__button-next',
     prevEl: '.slider-pets__button-prev',
+  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'progressbar'
+  // },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
   },
 });
