@@ -1,38 +1,112 @@
 .pick {
-
+  @include orangeGrad();
+  padding:  69px 0px 100px 0px;
   &__body {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding:  41px 0px 59px 0px;
   }
-
   &__title {
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    padding:  0px 0px 30px 0px;
   }
-
   &__content {
+    padding:  0px 59px 0px 99px;
+    font-size: 14px;
+    line-height: 130%;
   }
-
   &__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+    padding:  0px 0px 40px 0px;
   }
-
   &__covid {
+    font-weight: 500;
+    padding:  0px 0px 10px 0px;
+    letter-spacing: 0.8px;
   }
-
   &__text {
+    font-size: 16px;
+    padding:  0px 0px 60px 0px;
+    a {
+      display: inline-block;
+      color: inherit;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: #FE9013;
+        transition: all 0.3s ease 0s;
+      }
+      &:hover::after {
+        background-color: $green;
+        transition: all 0.3s ease 0s;
+      }
+    }
   }
-
-  &__how {
-  }
-
+  &__how {}
   &__button {
+    padding:  60px 0px 0px 0px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
 .how {
-
+  &__title {
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    padding:  0px 0px 40px 0px;
+  }
   &__items {
+    padding: 0px 198px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 168px 69px 168px 69px 168px;
   }
-
   &__item-card {
+    height: 244px;
   }
-
   &__item-arrow {
+    padding:  62px 0px 0px 0px;
+  }
+}
+
+.how-card {
+  &__image {
+    width: 168px;
+    height: 168px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -1px;
+      border-radius: inherit;
+      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    }
+  }
+  &__text {
+    padding:  30px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 140%;
   }
 }
