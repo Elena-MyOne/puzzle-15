@@ -1,0 +1,156 @@
+.footer {
+  background-color: #111115;
+  color: #fff;
+  padding:  41px 0px 50px 0px;
+  &__body {}
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    cursor: pointer;
+  }
+  &__subscribe-form {}
+
+  &__button {
+    margin: 36px 0px 0px 0px;
+    display: flex;
+    text-align: center;
+    a {
+      border-radius: 5px;
+      &::after{
+        border-radius: 5px;
+      }
+      &::before{
+        border-radius: 5px;
+      }
+    }
+  }
+  &__bottom {
+    padding:  44px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__social {
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 140%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:not(:last-child) {
+      margin: 0px 0px 10px 0px;
+    }
+    &:hover{
+      .footer__icon-image {
+        background: $green;
+        transition: all 0.3s ease 0s;
+      }
+      .footer__icon-text {
+        color: $green;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+  &__icon-image {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    transition: all 0.3s ease 0s;
+  }
+  &__icon-text {
+    color: #fff;
+  }
+  &__menu {
+    margin: 0px 0px 0px 117px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    li:not(:last-child) {
+      padding: 0px 58px 0px 0px;
+    }
+  }
+  &__link {
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      color: #F9804B;
+    }
+    
+  }
+  &__copy {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    p:not(:last-child) {
+      padding: 0px 0px 10px 0px;
+    }
+  }
+  ._active-link {
+    color: #F9804B;
+  }
+}
+
+.subscribe-form {
+  &__title {
+    font-size: 24px;
+    line-height: 120%;
+    padding:  0px 0px 14px 0px;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    background: #111115;
+    border: 1px solid #F9804B;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    width: 228px;
+    &:active{
+      border: 1px solid $green;
+    }
+    &:focus{
+      border: 1px solid $green;
+    }
+    &:hover{
+      border: 1px solid $green;
+    }
+    &:invalid {
+      border: 1px solid $red;
+    }
+  }
+  &__submit {
+    padding: 10px 39px;
+    color: $blackBlue;
+    background-color: #F1F3F2;
+    border-radius: 5px;
+    border: 1px solid $blackBlue;
+    transition: all 0.3s ease 0s;
+    &:active{
+      border: 1px solid $green;
+      color: $green;
+    }
+    &:hover{
+      border: 1px solid $green;
+      color: $green;
+    }
+    &:invalid {
+      border: 1px solid $red;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.backstage {
+  padding:  140px 0px 90px 0px;
+  position: relative;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__row {
+    flex: 0 1 50%;
+    &:last-child {
+      padding:  0px 0px 0px 70px;
+    }
+    height: 403px;
+  }
+  &__image {
+    position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 120%;
+    padding:  0px 0px 20px 0px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+    padding:  50px 0px 30px 0px;
+  }
+  &__flower {
+    position: absolute;
+    width: 293px;
+    height: 605px;
+    top: 10px;
+    right: -90px;
+    background: url("../assets/images/backstage/flower.png") no-repeat;
+  }
+}
