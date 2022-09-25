@@ -56,7 +56,15 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
+      filename: 'index.html',
       template: './index.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'donate.html',
+      template: './donate.html',
       minify: {
         collapseWhitespace: isProd
       }
