@@ -1,11 +1,12 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
-import './styles/style.scss'
+import './styles/style.scss';
 
+import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js'
 
+fillSliderbarInput();
 // import json from './assets/json.json'  //for json files import
 // import xml from './assets/data.xml'  //for xml files import
 
@@ -22,18 +23,15 @@ import './styles/style.scss'
 
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation],
   loop: true,
   navigation: {
     nextEl: '.slider-pets__button-next',
     prevEl: '.slider-pets__button-prev',
   },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'progressbar'
-  // },
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
   },
 });
+
