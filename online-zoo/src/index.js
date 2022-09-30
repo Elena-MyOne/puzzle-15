@@ -4,7 +4,8 @@ import Swiper, { Navigation } from 'swiper';
 
 import './styles/style.scss';
 
-import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js'
+import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js';
+import {headerBurger, headerList, headerBody} from './models/header.js'
 
 fillSliderbarInput();
 // import json from './assets/json.json'  //for json files import

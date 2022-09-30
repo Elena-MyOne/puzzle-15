@@ -1,5 +1,5 @@
 .testimonials {
-  padding:  140px 0px 180px 0px;
+  padding:  140px 0px 179px 0px;
   background: url("../assets/images/testimonials/leav.png") 100% 105%  no-repeat;
   &__body {
   }
@@ -8,7 +8,6 @@
     line-height: 130%;
     text-align: center;
     padding:  0px 0px 47px 0px;
-    letter-spacing: 0.6px;
   }
   &__items {
     display: grid;
@@ -19,7 +18,7 @@
     position: relative;
     background: #F1F3F2;
     border-radius: 20px;
-    padding:  15px 15px 19px 15px;
+    padding:  15px 13px 19px 16px;
     letter-spacing: 0px;
     background-clip: padding-box;
     border: 2px solid transparent;

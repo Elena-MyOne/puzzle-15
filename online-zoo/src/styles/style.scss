@@ -9,10 +9,10 @@ $minWidth: 320px;
 $maxWidth: 1600;
 $maxWidthContainer: 1160px;
 
-$md1:$maxWidthContainer + 12;
-$md2:1000;
-$md3:640;
-$md4:479.98;
+$md1:$maxWidthContainer + 30;
+$md2:999.98px;
+$md3:639.98px;
+$md4:479.98px;
 
 $fontfamily: Roboto;
 $fontSize: 16;
@@ -45,7 +45,7 @@ html {
 body{
   color: $blackBlue;
   font-family: $fontfamily;
-  @media (max-width: ($md3+px)){
+  @media (max-width: 770px){
     &.lock{
       overflow: hidden;
     }
@@ -62,25 +62,33 @@ body{
 	flex-direction: column;
 }
 
-._container{max-width: $maxWidthContainer; margin: 0 auto;width: 100%;padding: 0 0px;
-	@media (max-width: ($md1+px)){max-width: 970px;}
-	@media (max-width: ($md2+px)){max-width: 750px;}
-	@media (max-width: ($md3+px)){max-width: none;padding: 0 10px;}
+._container{
+  max-width: $maxWidthContainer; 
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0px;
+  @media (max-width: $md1){
+    max-width: 970px;
+    padding: 0px 16px;
+  }
+  @media (max-width: $md2){
+    max-width: none;
+    padding: 0px 20px;
+  }
+  @media (max-width: $md3){
+    padding: 0px 10px;
+  }
 }
 
 main {
 	flex: 1 1 auto;
   padding: 0px 0px 0px 0px;
-  letter-spacing: 1.1px;
-  @media (max-width: 997px){
-    padding: 0px 0px 0px 0px;
-  }
 }
 
 .page {
 	margin: 80px 0px 0px 0px;
-	@media (max-width: ($md3+px)){
-		margin: 60px 0px 0px 0px;
+	@media (max-width: 770px){
+		margin: 34px 0px 0px 0px;
 	}
 }
 

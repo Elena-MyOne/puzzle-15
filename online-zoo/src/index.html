@@ -19,6 +19,7 @@
           <ul class="header__list">
             <li>
               <a href="#" class="header__logo"><h1>PetStory <br>online</h1></a>
+              <img class="header__logo-img" src="./assets/images/header/logo-640-hov.png" alt="logo">
             </li>
             <li>
               <a href="#" class="header__link _active-link">About</a>
@@ -53,7 +54,12 @@
           </div>
         </div>
         <div class="watch__image _ibg">
-					<img src="assets/images/watch/1.jpg" alt="Big panda">
+          <picture>
+            <source media="(max-width: 1190px)" srcset="assets/images/watch/2.jpg">
+            <source media="(max-width: 770px)" srcset="assets/images/watch/3.jpg">
+            <source media="(min-width: 770px)" srcset="assets/images/watch/4.jpg">
+            <img src="assets/images/watch/1.jpg" alt="Big panda">
+          </picture>
 				</div>
       </section>
 
@@ -68,7 +74,7 @@
             <h3 class="backstage__title">The Backstage of the Wilderness World.</h3>
             <div class="backstage__text">The site was founded on the basis of a volunteer movement to protect and care for animals.</div>
             <h4 class="backstage__subtitle">How it works </h4>
-            <div class="backstage__text">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</div>
+            <div class="backstage__text backstage__text-2">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</div>
             <div class="backstage__flower"></div>
           </div>
         </div>
@@ -194,7 +200,7 @@
 
       <section class="testimonials">
         <div class="testimonials__body _container">
-          <div class="testimonials__title">Testimonials</div>
+          <h2 class="testimonials__title">Testimonials</h2>
             <div class="testimonials__items">
               <div class="testimonials__item">
                 <div class="testimonials__info">
@@ -203,7 +209,7 @@
                     <div class="testimonials__name-name">Michael John</div>
                     <div class="testimonials__name-loc">
                       <span>Local Austria</span>
-                      <span>•</span>
+                      <span> • </span>
                       <span>Today</span>
                     </div>
                   </div>
