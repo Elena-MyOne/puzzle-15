@@ -17,6 +17,7 @@
   }
   &__row {
     flex: 0 1 50%;
+    height: 403px;
     &:first-child{
       flex: 0 1 55.5%;
       @media (max-width: 1190px) {
@@ -42,7 +43,6 @@
         padding: 0px 5px 0px 2px;
       }
     }
-    height: 403px;
     @media (max-width: 1190px) {
       height: 407px;
     }
