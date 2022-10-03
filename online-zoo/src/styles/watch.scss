@@ -1,14 +1,24 @@
 .watch {
   position: relative;
   height: 700px;
+  //background: url(assets/images/watch/2.jpg) 0 -73px no-repeat;
   @media (max-width: 1190px){
     height: 504px;
+  }
+  @media (max-width: 1000px){
+    background: url('../assets/images/watch/2.jpg') 0 -73px no-repeat;
   }
   @media (max-width: 770px) {
     height: 340px;
   }
+  @media (max-width: 640px){
+    background: url('../assets/images/watch/2.jpg') 0px -30px /cover no-repeat;
+  }
   @media (max-width: 570px) {
     height: 187px;
+  }
+  @media (max-width: 320px){
+    background: url('../assets/images/watch/2.jpg') 0px -1px /cover no-repeat;
   }
   &__body {
     display: flex;
@@ -119,5 +129,8 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+    @media (max-width: 1000px){
+      display: none;
+    }
   }
 }
