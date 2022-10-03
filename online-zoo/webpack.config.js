@@ -8,8 +8,6 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development' //позволяет определить в каком режиме сборки true - dev
 const isProd = !isDev;
-// console.log('IS DEV:', isDev);
-// console.log('IS PROD:', isProd);
 
 const optimization = () => {
   const config = {
