@@ -49,8 +49,9 @@ module.exports = {
   optimization: optimization(),
   devServer: {
     port: 4200,
+    //open: true,
     watchFiles: ["./src/*"],
-    hot: isDev
+    //hot: isDev
   },
   plugins: [
     new HTMLWebpackPlugin({
