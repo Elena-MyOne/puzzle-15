@@ -7,21 +7,12 @@ import './styles/style.scss';
 import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js';
 import {headerBurger, headerList, headerBody} from './models/header.js'
 
-fillSliderbarInput();
-// import json from './assets/json.json'  //for json files import
-// import xml from './assets/data.xml'  //for xml files import
-
-// import Post from "@models/Post"; //js file example
-// import WebpackLogo from './assets/webpack-logo' //js image example
-
-// const post = new Post('Webpack Post Title', WebpackLogo)
+import { Item } from './models/Items';
+import {changeOrder, getRandomSlides, createSlide3} from './models/pets'
 
 
-//dynamic import lodash
-// import('lodash').then(({default: lodash}) => {  
-//   console.log('lodash: ', lodash.random(0, 100, true))
-// }) 
-
+//pets=====================================
+createSlide3();
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
@@ -34,5 +25,37 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
     draggable: true,
   },
+  speed: 500,
+  observer: true,
+  observeSlideChildren: true,
+  observeParents: true,
+
+  // virtual: {
+  //   slides: [
+  //     `Slide-${slidesNum[0]}`,
+  //     `Slide-${slidesNum[1]}`,
+  //     `Slide-${slidesNum[2]}`,
+  //     `Slide-${slidesNum[3]}`,
+  //     `Slide-${slidesNum[4]}`,
+  //     `Slide-${slidesNum[5]}`
+  //   ]
+  // }
+
+  // virtual: {
+  //   slides: (()=> {
+  //     let slide = []
+  //     for (let i = 0; i < 5; i++) {
+  //       slide.push(`pets-slide-${i}`)
+  //     }
+  //   })
+  // }
 });
 
+//testimonials============================================
+fillSliderbarInput();
+
+//=================================================
+//dynamic import lodash
+// import('lodash').then(({default: lodash}) => {  
+//   console.log('lodash: ', lodash.random(0, 100, true))
+// }) 
