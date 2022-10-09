@@ -29,26 +29,6 @@ const swiper = new Swiper('.swiper', {
   observer: true,
   observeSlideChildren: true,
   observeParents: true,
-
-  // virtual: {
-  //   slides: [
-  //     `Slide-${slidesNum[0]}`,
-  //     `Slide-${slidesNum[1]}`,
-  //     `Slide-${slidesNum[2]}`,
-  //     `Slide-${slidesNum[3]}`,
-  //     `Slide-${slidesNum[4]}`,
-  //     `Slide-${slidesNum[5]}`
-  //   ]
-  // }
-
-  // virtual: {
-  //   slides: (()=> {
-  //     let slide = []
-  //     for (let i = 0; i < 5; i++) {
-  //       slide.push(`pets-slide-${i}`)
-  //     }
-  //   })
-  // }
 });
 
 //testimonials============================================
