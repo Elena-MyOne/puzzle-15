@@ -4,9 +4,11 @@ const headerList = document.querySelector(".header__list");
 const headerBody = document.querySelector(".header__body");
 const headerLinks = document.querySelectorAll(".header__link");
 const headerBack = document.querySelector(".header__back");
+const headerLogoImg = document.querySelector(".header__logo-img");
 
 headerBurger.addEventListener('click', toggleActive);
 headerBack.addEventListener('click', toggleActive);
+headerLogoImg.addEventListener('click', toggleActive);
 
 function toggleActive() {
   headerBurger.classList.toggle('active');

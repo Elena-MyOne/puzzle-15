@@ -4,12 +4,14 @@ import Swiper, { Navigation } from 'swiper';
 
 import './styles/style.scss';
 
-import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js';
 import {headerBurger, headerList, headerBody} from './models/header.js'
+
+import { donate } from './models/donate';
 
 import { Item } from './models/Items';
 import {changeOrder, getRandomSlides, createSlide3} from './models/pets'
 
+import {sliderbarInput, fillSliderbarInput, testimonials} from './models/testimonials.js';
 
 //pets=====================================
 createSlide3();

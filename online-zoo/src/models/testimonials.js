@@ -20,9 +20,7 @@ function fillSliderbarInput() {
 }
 
 let position = 0;
-const slidesToShow = 4;
 const slidesToScroll = 1;
-const container = document.querySelector('.slider-container');
 const track = document.querySelector('.slider-track');
 const items = document.querySelectorAll('.testimonials__item');
 
@@ -31,51 +29,72 @@ sliderbarInput.addEventListener('input', (e) => {
   const itemGap = parseInt(getComputedStyle(track).getPropertyValue('gap'));
 
   const movePosition = slidesToScroll * (itemWidth + itemGap);
-  console.log(itemWidth);
-  console.log(itemGap);
-  console.log(movePosition);
 
   let value = +sliderbarInput.value;
-  console.log(value);
 
   if(value === 0) {
     track.style.transform = `translateX(${position}px)`;
-    console.log(position);
   }
   if(value === 1) {
     track.style.transform = `translateX(-${movePosition}px)`;
-    console.log(-movePosition);
   }
   if(value === 2) {
     track.style.transform = `translateX(-${movePosition * 2}px)`;
-    console.log(-movePosition * 2);
   }
   if(value === 3) {
     track.style.transform = `translateX(-${movePosition * 3}px)`;
-    console.log(-movePosition * 3);
   }
   if(value === 4) {
     track.style.transform = `translateX(-${movePosition * 4}px)`;
-    console.log(-movePosition * 4);
   }
   if(value === 5) {
     track.style.transform = `translateX(-${movePosition * 5}px)`;
-    console.log(-movePosition * 5);
   }
   if(value === 6) {
     track.style.transform = `translateX(-${movePosition * 6}px)`;
-    console.log(-movePosition * 6);
   }
   if(value === 7) {
     track.style.transform = `translateX(-${movePosition * 7}px)`;
-    console.log(-movePosition * 7);
   }
   if(value === 8) {
     track.style.transform = `translateX(-${movePosition * 8}px)`;
-    console.log(-movePosition * 8);
   }
 })
 
+const testimonials = document.querySelector('.testimonials');
+const testimonialsBack = document.querySelector('.testimonials__back');
+const testimonialsCardView = document.querySelector('.testimonials__card-view');
+const testimonialsCardClose = document.querySelector('.testimonials__card-close');
+
+testimonials.addEventListener('click', (e) => {
+  let target = e.target.closest('.testimonials__item')
+  if(target) {
+    testimonialsBack.classList.toggle('active');
+    testimonialsCardView.classList.toggle('active');
+
+    let copy = target.innerHTML;
+    testimonialsCardView.innerHTML = copy;
+    testimonialsCardView.prepend(closeCard)
+  }
+})
+
+function removeCard() {
+  testimonialsBack.classList.remove('active');
+  testimonialsCardView.classList.remove('active');
+  testimonialsCardView.classList.remove('active');
+  testimonialsCardView.innerHTML = '';
+}
+
+testimonials.addEventListener('click', (e) => {
+  if(e.target === testimonialsBack) {
+    removeCard();
+  }
+})
+
+testimonialsCardClose.addEventListener('click', removeCard)
+document.querySelector('.testimonials__card').addEventListener('click', removeCard)
+document.querySelector('.pick').addEventListener('click', removeCard)
+document.querySelector('.footer').addEventListener('click', removeCard)
 
 
-export {sliderbarInput, fillSliderbarInput}
+export {sliderbarInput, fillSliderbarInput, testimonials}
