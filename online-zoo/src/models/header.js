@@ -3,10 +3,17 @@ const headerMenu = document.querySelector(".header__menu");
 const headerList = document.querySelector(".header__list");
 const headerBody = document.querySelector(".header__body");
 const headerLinks = document.querySelectorAll(".header__link");
+const headerBack = document.querySelector(".header__back");
+const headerLogoImg = document.querySelector(".header__logo-img");
 
-headerBurger.onclick = function () {
-	headerBurger.classList.toggle('active');
+headerBurger.addEventListener('click', toggleActive);
+headerBack.addEventListener('click', toggleActive);
+headerLogoImg.addEventListener('click', toggleActive);
+
+function toggleActive() {
+  headerBurger.classList.toggle('active');
 	headerMenu.classList.toggle('active');
+	headerBack.classList.toggle('active');
 	document.body.classList.toggle('lock');
   headerLinks[0].classList.remove('_active-link')
 }
@@ -15,6 +22,7 @@ headerList.addEventListener("click", function(event) {
   if( event.target.closest(".header__link")) {
     headerBurger.classList.remove('active');
     headerMenu.classList.remove('active');
+    headerBack.classList.remove('active');
     document.body.classList.remove('lock');
     headerLinks[0].classList.add('_active-link')
   }

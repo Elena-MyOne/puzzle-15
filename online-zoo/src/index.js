@@ -4,24 +4,17 @@ import Swiper, { Navigation } from 'swiper';
 
 import './styles/style.scss';
 
-import {sliderbarInput, fillSliderbarInput} from './models/testimonials.js';
 import {headerBurger, headerList, headerBody} from './models/header.js'
 
-fillSliderbarInput();
-// import json from './assets/json.json'  //for json files import
-// import xml from './assets/data.xml'  //for xml files import
+import { donate } from './models/donate';
 
-// import Post from "@models/Post"; //js file example
-// import WebpackLogo from './assets/webpack-logo' //js image example
+import { Item } from './models/Items';
+import {changeOrder, getRandomSlides, createSlide3} from './models/pets'
 
-// const post = new Post('Webpack Post Title', WebpackLogo)
+import {sliderbarInput, fillSliderbarInput, testimonials} from './models/testimonials.js';
 
-
-//dynamic import lodash
-// import('lodash').then(({default: lodash}) => {  
-//   console.log('lodash: ', lodash.random(0, 100, true))
-// }) 
-
+//pets=====================================
+createSlide3();
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
@@ -34,5 +27,17 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
     draggable: true,
   },
+  speed: 500,
+  observer: true,
+  observeSlideChildren: true,
+  observeParents: true,
 });
 
+//testimonials============================================
+fillSliderbarInput();
+
+//=================================================
+//dynamic import lodash
+// import('lodash').then(({default: lodash}) => {  
+//   console.log('lodash: ', lodash.random(0, 100, true))
+// }) 

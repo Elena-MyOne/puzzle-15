@@ -308,7 +308,7 @@
     }
   }
 }
-
+//slide1=========
 .item1 {
   order: 1;
 }
@@ -317,24 +317,12 @@
 }
 .item3 {
   order: 3;
-  @media (max-width: 1400px) {
-    order: 4;
-  }
-  @media (max-width: 980px) {
-    order: 3;
-  }
 }
 .item4 {
   order: 4;
-  @media (max-width: 1400px) {
-    display: none;
-  }
 }
 .item5 {
   order: 5;
-  @media (max-width: 1400px) {
-    order: 3;
-  }
   @media (max-width: 980px) {
     display: none;
   }
@@ -347,20 +335,65 @@
 }
 .item7 {
   display: none;
-  @media (max-width: 1400px) {
-    display: flex;
-    order: 5;
-  }
+}
+
+//slide2=========
+.item8 {
+  order: 1;
+}
+
+.item9 {
+  order: 2;
+}
+
+.item10 {
+  order: 3;
+}
+
+.item11 {
+  order: 4;
+}
+
+.item12 {
+  order: 5;
   @media (max-width: 980px) {
-    order: 4;
+    display: none;
   }
 }
 
-.slide2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 100px;
-  color: $green;
+.item13 {
+  order: 6;
+  @media (max-width: 980px) {
+    display: none;
+  }
+}
+//slide3=========
+.item14 {
+  order: 1;
+}
+
+.item15 {
+  order: 2;
+}
+
+.item16 {
+  order: 3;
+}
+
+.item17 {
+  order: 4;
+}
+
+.item18 {
+  order: 5;
+  @media (max-width: 980px) {
+    display: none;
+  }
+}
+
+.item19 {
+  order: 6;
+  @media (max-width: 980px) {
+    display: none;
+  }
 }

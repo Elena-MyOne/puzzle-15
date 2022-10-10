@@ -15,28 +15,30 @@
         <div class="header__burger">
           <span></span>
         </div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li>
-              <a href="./index.html" class="header__logo"><h1>PetStory <br>online</h1></a>
-            </li>
-            <li>
-              <a href="./index.html" class="header__link">About</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Map</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Zoos</a>
-            </li>
-            <li>
-              <a href="#" class="header__link _active-link">Donate</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Contact us</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__back"></div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a href="./index.html" class="header__logo"><h1>PetStory <br>online</h1></a>
+                <img class="header__logo-img" src="./assets/images/header/logo-640-hov.png" alt="logo">
+              </li>
+              <li>
+                <a href="./index.html" class="header__link">About</a>
+              </li>
+              <li>
+                <a href="#" class="header__link">Map</a>
+              </li>
+              <li>
+                <a href="#" class="header__link">Zoos</a>
+              </li>
+              <li>
+                <a href="#" class="header__link _active-link">Donate</a>
+              </li>
+              <li>
+                <a href="#" class="header__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
         <div class="header__designed"><a class="header__link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by &copy;</a></div>
       </div>
     </header>
@@ -76,33 +78,34 @@
                 <div class="progressbar__progressbar-body">
                   <div class="progressbar__progressbar-inner"></div>
                   <div class="progressbar__progressbar-dotes">
-                    <span class="dotes dotes-5000"></span>
-                    <span class="dotes dotes-2000"></span>
-                    <span class="dotes dotes-1000 _active"></span>
-                    <span class="dotes dotes-500"></span>
-                    <span class="dotes dotes-250"></span>
-                    <span class="dotes dotes-100 _active-640"></span>
-                    <span class="dotes dotes-50"></span>
-                    <span class="dotes dotes-25"></span>
+                    <span class="dotes dotes-5000 5000"></span>
+                    <span class="dotes dotes-2000 2000"></span>
+                    <span class="dotes dotes-1000 1000"></span>
+                    <span class="dotes 500"></span>
+                    <span class="dotes 250"></span>
+                    <span class="dotes 100 _active"></span>
+                    <span class="dotes 50"></span>
+                    <span class="dotes 25"></span>
                   </div>
                 </div>
                 <div class="progressbar__money money">
-                  <div class="money money-5000"><span>$</span>5000</div>
-                  <div class="money money-2000"><span>$</span>2000</div>
-                  <div class="money money-1000 _active"><span>$</span>1000</div>
-                  <div class="money money-500"><span>$</span>500</div>
-                  <div class="money money-250"><span>$</span>250</div>
-                  <div class="money money-100 _active-640"><span>$</span>100</div>
-                  <div class="money money-50"><span>$</span>50</div>
-                  <div class="money money-25"><span>$</span>25</div>
+                  <div class="money money-5000 5000"><span>$</span>5000</div>
+                  <div class="money money-2000 2000"><span>$</span>2000</div>
+                  <div class="money money-1000 1000"><span>$</span>1000</div>
+                  <div class="money money-500 500"><span>$</span>500</div>
+                  <div class="money money-250 250"><span>$</span>250</div>
+                  <div class="money money-100 100 _active"><span>$</span>100</div>
+                  <div class="money money-50 50"><span>$</span>50</div>
+                  <div class="money money-25 25"><span>$</span>25</div>
                 </div>
               </div>
 
-              <form class="donate-pick__form donate-form">
+              <form class="donate-pick__form donate-form" name="donateForm">
                 <div class="donate-form__item">
-                  <input class="donate-form__input" type="number" placeholder="Another amount" name="amount">
+                  <input class="donate-form__input" type="number" placeholder="Another amount" name="amount" value="100" min="0" max="9999" step="1">
                   <div class="donate-form__icon"></div>
                 </div>
+                <div class="donate-form__error"></div>
                 <div class="donate-form__item-radio">
                   <div class="donate-form__item">
                     <input  class="donate-form__radio" id="monthly" type="radio" value="monthly" name="period">
