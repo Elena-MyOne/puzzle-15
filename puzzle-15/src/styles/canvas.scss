@@ -2,3 +2,113 @@ body {
   background-color: $bgc;
   color: $btnc2Hover;
 }
+
+.menu {
+  margin: 0px 0px 1.5rem 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-btn {
+  background: $btnc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: $bgc;
+  font-size: inherit;
+  transition: all 0.3s ease 0s;
+  height: 42px;
+  &:hover{
+    background: $btncHover;
+  }
+}
+
+.shuffle {
+  margin: 0px 15px 0px 0px;
+  @media (max-width: 599px) {
+    margin: 0px 15px 10px 0px;
+  }
+}
+
+.stop {
+  margin: 0px 15px 0px 0px;
+  background-color: $btnc2;
+  &:hover{
+    background-color: $btnc2Hover;
+  }
+  @media (max-width: 599px) {
+    margin: 0px 15px 10px 0px;
+  }
+}
+.save {
+  margin: 0px 15px 0px 0px;
+  @media (max-width: 599px) {
+    margin: 0px 15px 10px 0px;
+  }
+}
+.results {
+  margin: 0px 15px 0px 0px;
+
+}
+.mute {
+  background: $btnc url(../assets/images/volume.svg) center / 30px 30px no-repeat;
+  padding: 10px 22px;
+  &:hover{
+    background: $btncHover url(../assets/images/mute.svg) center / 30px 30px no-repeat;
+  }
+}
+.statistic {
+  margin: 0px 0px 1.5rem 0px;
+  display: flex;
+  justify-content: center;
+}
+.moves {
+  margin: 0px 30px 0px 0px;
+  color: $btnc2
+}
+
+.time {
+  color: $btnc2
+}
+
+.game {
+  width: 100%;
+  padding:  0px 0px 100% 0px;
+  background-color: $bgc2;
+  margin: 0px 0px 1.5rem 0px;
+  position: relative;
+}
+
+.game-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+  border-radius: 5px;
+  background-color: $cellc;
+  font-size: 1.4rem;
+  color: $btnc2Hover;
+  border: 3px solid $bgc;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  margin: 0px 15px 0px 0px;
+  background-color: $btnc2;
+  color: $bgc;
+  font-size: inherit;
+  padding: 10px 10px;
+  border-radius: 5px;
+  &:hover{
+    background-color: $btnc2Hover;
+  }
+  @media (max-width: 599px) {
+    margin: 5px 10px 0px 0px;
+  }
+}

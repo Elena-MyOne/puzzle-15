@@ -7,12 +7,13 @@ $maxWidthContainer: 600px;
 $fontfamily: Roboto;
 $fontSize: 18px;
 
-$bgc: #fdf4e5;
-$cellc: #B1A298;
-$btnc: #ec5749;
+$bgc: #fcf3e4;
+$bgc2: #f3e6d1;
+$cellc: #c4b7ae;
+$btnc: #e44429;
 $btncHover: #b1271d;
 $btnc2: #63585E;
-$btnc2Hover: #363334;
+$btnc2Hover: #413e3f;
 
 .wrapper{
 	min-height: 100%;
@@ -24,7 +25,9 @@ $btnc2Hover: #363334;
   flex-direction: column;
 	justify-content: center;
   align-items: center;
-  color: #363334;
+  color: $btnc2Hover;
+  user-select: none;
+  padding: 5px;
   @media (max-width: 599px) {
     font-size: 16px;
   }
