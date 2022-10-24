@@ -7,13 +7,14 @@ $maxWidthContainer: 600px;
 $fontfamily: Roboto;
 $fontSize: 18px;
 
-$bgc: #fcf3e4;
-$bgc2: #f3e6d1;
-$cellc: #c4b7ae;
-$btnc: #e44429;
-$btncHover: #b1271d;
-$btnc2: #63585E;
-$btnc2Hover: #413e3f;
+$bgc: #f7f3ee;
+$bgc2: #f1ebe2;
+$cellc: #e2ddcd;
+$btnc: #cf7a29;
+$btnc3: #ebae2b;
+$btncHover: #b1531d;
+$btnc2: #692660;
+$btnc2Hover: #42183d;
 
 .wrapper{
 	min-height: 100%;
@@ -34,4 +35,4 @@ $btnc2Hover: #413e3f;
 }
 
 @import 'reset.scss';
-@import 'canvas.scss';
+@import 'game.scss';
