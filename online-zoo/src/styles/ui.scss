@@ -1,0 +1,54 @@
+.button {
+  a,
+  span {
+    position: relative;
+    display: inline-block;
+    padding: 16px 30px;
+    width: 298px;
+    @include btnDef();
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.5s ease 0s;
+    z-index: 20;
+  }
+  a::before,
+  span::before {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $orange;
+    border-radius: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: -1000;
+  }
+  a:hover::before,
+  span:hover::before{
+    opacity: 1;
+  }
+  a::after,
+  span::after{
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $green;
+    border-radius: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: -1000;
+  }
+  a:active::after,
+  span:active::after{
+    opacity: 1;
+  }
+}

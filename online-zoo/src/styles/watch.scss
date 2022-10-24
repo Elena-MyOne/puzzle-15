@@ -1,0 +1,136 @@
+.watch {
+  position: relative;
+  height: 700px;
+  //background: url(assets/images/watch/2.jpg) 0 -73px no-repeat;
+  @media (max-width: 1190px){
+    height: 504px;
+  }
+  @media (max-width: 1000px){
+    background: url('../assets/images/watch/2.jpg') 0 -73px no-repeat;
+  }
+  @media (max-width: 770px) {
+    height: 340px;
+  }
+  @media (max-width: 640px){
+    background: url('../assets/images/watch/2.jpg') 0px -30px /cover no-repeat;
+  }
+  @media (max-width: 570px) {
+    height: 187px;
+  }
+  @media (max-width: 320px){
+    background: url('../assets/images/watch/2.jpg') 0px -1px /cover no-repeat;
+  }
+  &__body {
+    display: flex;
+    position: relative;
+		z-index: 2;
+  }
+  &__row {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding:  86px 0px 0px 0px;
+    @media (max-width: 1190px) {
+      padding:  42px 0px 0px 0px;
+      &:first-child{
+        flex: 0 1 46%;
+      }
+    }
+    @media (max-width: 770px) {
+      &:first-child{
+        display: none;
+      }
+      &:last-child{
+        flex: 1 1 auto;
+      }
+      padding:  47px 0px 0px 0px;
+    }
+    @media (max-width: 570px)  {
+      padding:  43px 0px 0px 0px;
+    }
+  }
+  &__circle {
+    position: absolute;
+    top: 12px;
+    right: 106px;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    z-index: 3;
+    @media (max-width: 1190px){
+      top: -12px;
+      right: 162px;
+      width: 367px;
+      height: 367px;
+    }
+    @media (max-width: 770px) {
+      top: 10px;
+      right: 73px;
+      width: 237.6px;
+      height: 237.6px;
+    }
+    @media (max-width: 570px) {
+      top: 22px;
+      right: 37px;
+      width: 119.09px;
+      height: 119.09px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 500px;
+    text-align: center;
+    z-index: 4;
+    span {
+      color: $yellow;
+    }
+    @media (max-width: 1190px){
+      font-size: 85px;
+    }
+    @media (max-width: 770px) {
+      font-size: 54.2894px;
+      width: 250px;
+    }
+    @media (max-width: 570px)  {
+      font-size: 28px;
+      width: 128px;
+    }
+  }
+  &__button {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:  60px 0px 0px 0px;
+    @media (max-width: 1190px) {
+      padding:  43px 0px 0px 0px;
+    }
+    @media (max-width: 770px) {
+      padding: 0px 0px 0px 0px;
+      margin: -5px 0px 0px 0px;
+      justify-content: start;
+      align-items: start;
+      width: 100%;
+    }
+    @media (max-width: 570px)  {
+      margin: 59px 0px 0px 0px;
+    }
+  }
+  &__image {
+    position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+    @media (max-width: 1000px){
+      display: none;
+    }
+  }
+}

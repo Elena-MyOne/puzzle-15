@@ -1,0 +1,112 @@
+.backstage {
+  padding:  140px 0px 90px 0px;
+  position: relative;
+  @media (max-width: 1190px) {
+    padding:  109px 0px 0px 0px;
+  }
+  @media (max-width: 980px) {
+    padding: 68px 0px 0px 0px;
+  }
+  @media (max-width: 570px) {
+    padding: 114px 0px 0px 0px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__row {
+    flex: 0 1 50%;
+    height: 403px;
+    &:first-child{
+      flex: 0 1 55.5%;
+      @media (max-width: 1190px) {
+        flex: 0 1 48.5%;
+      }
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+    &:last-child {
+      padding:  0px 0px 0px 85px;
+      @media (max-width: 1190px)  {
+        padding:  0px 0px 0px 16px;
+      }
+      @media (max-width: 980px) {
+        padding: 0px 116px 0px 2px;
+        flex: 1 1 auto;
+      }
+      @media (max-width: 570px) {
+        padding: 0px 18px 0px 2px;
+      }
+      @media (max-width: 330px) {
+        padding: 0px 5px 0px 2px;
+      }
+    }
+    @media (max-width: 1190px) {
+      height: 407px;
+    }
+  }
+  &__image {
+    position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 120%;
+    padding:  0px 0px 21px 0px;
+    @media (max-width: 1190px) {
+      margin: -9px 0px 0px 0px;
+    }
+    @media (max-width: 570px) {
+      font-size: 24px;
+      padding:  0px 3px 11px 0px;
+    }
+  }
+  &__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  }
+  &__text-2 {
+    line-height: 139%;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+    padding:  54px 0px 35px 0px;
+    @media (max-width: 980px) {
+      padding: 32px 0px 18px 0px;
+    }
+    @media (max-width: 570px) {
+      padding: 21px 0px 7px 0px;
+    }
+  }
+  &__flower {
+    position: absolute;
+    width: 293px;
+    height: 605px;
+    top: 10px;
+    right: -90px;
+    background: url("../assets/images/backstage/flower.png") no-repeat;
+    @media (max-width: 1540px) {
+      display: none;
+    }
+    @media (max-width: 980px) {
+      display: block;
+      width: 231px;
+      height: 476px;
+      top: -1px;
+      right: -99px;
+      background: url("../assets/images/backstage/flower_2.png") no-repeat;
+    }
+    @media (max-width: 570px) {
+      top: 39px;
+      right: -196px;
+      background: url("../assets/images/backstage/flower_3.png") no-repeat;
+    }
+  }
+}
