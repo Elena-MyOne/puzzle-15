@@ -1,6 +1,6 @@
 import "./styles/style.scss";
-import { audioWin, audioClick, audioStop, audioShuffle } from "./models/sound";
 import {
+  mute,
   body,
   game,
   gameWinMessage,
@@ -20,6 +20,30 @@ import {
   showWinMessage,
   levelBtns,
 } from "./models/status";
+
+//========================================================
+
+const audioWin = new Audio("./assets/audio/end.mp3");
+const audioClick = new Audio("./assets/audio/click.mp3");
+const audioStop = new Audio("./assets/audio/stop.mp3");
+const audioShuffle = new Audio("./assets/audio/shuffle.mp3");
+
+mute.addEventListener("click", (e) => {
+  mute.classList.toggle("sound-off");
+
+  if (mute.classList.contains("sound-off")) {
+    audioClick.muted = true;
+    audioWin.muted = true;
+    audioStop.muted = true;
+    audioShuffle.muted = true;
+  } else {
+    audioClick.muted = false;
+    audioWin.muted = false;
+    audioStop.muted = false;
+    audioShuffle.muted = false;
+  }
+});
+//========================================================
 
 const gameBtns = Array.from(game.querySelectorAll(".game-btn"));
 const countItem3x3 = 3 * 3;
@@ -66,29 +90,23 @@ let arrDataMatrixNum = gameBtns.map((item) => Number(item.dataset.matrixNum));
 let arrDataMatrixNum4 = arrDataMatrixNum.slice(0, 4 * 4);
 gameBtns[countItem4x4 - 1].style.display = "none"; //убираем последний элемент
 let matrix4x4 = getMatrix(arrDataMatrixNum4, 4);
-console.log(matrix4x4);
 
 //++++++++++++++++++++++++
 
 let arrDataMatrixNum3 = arrDataMatrixNum.slice(0, 3 * 3);
 let matrix3x3 = getMatrix(arrDataMatrixNum3, 3);
-console.log(matrix3x3);
 
 let arrDataMatrixNum5 = arrDataMatrixNum.slice(0, 5 * 5);
 let matrix5x5 = getMatrix(arrDataMatrixNum5, 5);
-console.log(matrix5x5);
 
 let arrDataMatrixNum6 = arrDataMatrixNum.slice(0, 6 * 6);
 let matrix6x6 = getMatrix(arrDataMatrixNum6, 6);
-console.log(matrix6x6);
 
 let arrDataMatrixNum7 = arrDataMatrixNum.slice(0, 7 * 7);
 let matrix7x7 = getMatrix(arrDataMatrixNum7, 7);
-console.log(matrix7x7);
 
 let arrDataMatrixNum8 = arrDataMatrixNum.slice(0, 8 * 8);
 let matrix8x8 = getMatrix(arrDataMatrixNum8, 8);
-console.log(matrix8x8);
 
 //+++++++++++++++++++++++++++
 
