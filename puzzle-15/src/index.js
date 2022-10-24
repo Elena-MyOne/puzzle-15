@@ -1,4 +1,5 @@
 import "./styles/style.scss";
+import { audioWin, audioClick, audioStop, audioShuffle } from "./models/sound";
 import {
   body,
   game,
@@ -19,7 +20,6 @@ import {
   showWinMessage,
   levelBtns,
 } from "./models/status";
-import { audioWin, audioClick, audioStop, audioShuffle } from "./models/sound";
 
 const gameBtns = Array.from(game.querySelectorAll(".game-btn"));
 const countItem3x3 = 3 * 3;

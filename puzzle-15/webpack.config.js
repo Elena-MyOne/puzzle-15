@@ -109,6 +109,13 @@ module.exports = {
         test: /\.xml$/,
         use: ["xml-loader"],
       },
+      {
+        test: /\.(mp3|wav)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "audio/[name][ext]",
+        },
+      },
     ],
   },
 };

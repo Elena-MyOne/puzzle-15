@@ -9,8 +9,7 @@ audioClick.src = "../assets/audio/click.mp3";
 export const audioStop = new Audio();
 audioStop.src = "../assets/audio/stop.mp3";
 
-export const audioShuffle = new Audio();
-audioShuffle.src = "../assets/audio/shuffle.mp3";
+export const audioShuffle = new Audio("../assets/audio/shuffle.mp3");
 
 mute.addEventListener("click", (e) => {
   mute.classList.toggle("sound-off");
